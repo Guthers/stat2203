@@ -4,6 +4,7 @@ function contTable(x)
     totSum = sum(x,'all')
     
     sprintf("Expected count (x,y) = col(y)*row(x)/sum table")
+    format longG
     expectedCounts = (rowSum*colSum) / totSum
     
     chisquare = sum((x-expectedCounts).^2./(expectedCounts),'all')
