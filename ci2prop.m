@@ -14,4 +14,5 @@ function ci2prop(n1, p1, n2, p2, ci)
     err = z * serror;
     sprintf("err = z * serror = %f", err)
     sprintf("phdiff ± err = %f ± %f", phdiff, err)
+    sprintf("range [%f,%f]", phdiff - err,phdiff + err)
 end
